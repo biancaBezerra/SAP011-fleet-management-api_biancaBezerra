@@ -2,398 +2,391 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Objetivos de aprendizaje](#3-objetivos-de-aprendizaje)
-* [4. Criterios de aceptación del proyecto](#4-criterios-de-aceptación-del-proyecto)
-* [5. Stack de tecnologías](#5-stack-de-tecnologías)
-* [6. Boilerplate](#6-Boilerplate)
-* [7. Pistas, tips y lecturas complementarias](#7-pistas-tips-y-lecturas-complementarias)
-* [8. Hacker edition](#8-hacker-edition)
+- [1. Preâmbulo](#1-preâmbulo)
+- [2. Resumo do projeto](#2-resumo-do-projeto)
+- [3. Objetivos de aprendizagem](#3-objetivos-de-aprendizagem)
+- [4. Critérios de aceitação do projeto](#4-critérios-de-aceitação-do-projeto)
+- [5. Stack de tecnologia](#5-stack-de-tecnologia)
+- [6. Modelo Base](#6-modelo-base)
+- [7. Dicas, guias e leituras complementares](#7-dicas-dicas-e-leituras-complementares)
+- [8. Edição Hacker](#8-edição-hacker)
 
 ***
 
-## 1. Preámbulo
+## 1. Preâmbulo
 
-De acuerdo con
-[Wikipedia](https://es.wikipedia.org/wiki/Internet_de_las_cosas),
-la internet de las cosas (IoT, por sus siglas en inglés)​ es un concepto que
-se refiere a una interconexión digital de objetos cotidianos con internet.
-Constituye un cambio radical en la calidad de vida de las personas en la
-sociedad, ofrece una gran cantidad de nuevas oportunidades de acceso a
-datos, servicios específicos en la educación, seguridad, asistencia
-sanitaria y en el transporte, entre otros campos.
+De acordo com [Wikipedia](https://pt.wikipedia.org/wiki/Internet_das_coisas),
+a internet das coisas (IoT, em inglês) é um conceito que se refere à
+interconexão digital de objetos cotidianos com a internet. Constitui uma mudança
+radical na qualidade de vida das pessoas na sociedade, oferecendo muitas novas
+oportunidades de acesso a dados, serviços específicos na educação, segurança,
+assistência médica e transporte, entre outros campos.
 
-En logística y manejo de flota, por ejemplo, se puede hacer seguimiento en
-todo momento de la ubicación y las condiciones de la carga y los activos
-mediante sensores inalámbricos conectados a internet que envían alertas en
-caso de eventualidades (demoras, daños, robos, etc).
+Em logística e gestão de frotas de automóveis, por exemplo, é possível rastrear
+a localização e as condições da carga e dos veículos o tempo todo, por meio de
+sensores sem fio conectados à internet que enviam alertas em caso de
+eventualidades (atrasos, danos, roubos, etc).
 
 ![zach-vessels-utMdPdGDc8M-unsplash](https://user-images.githubusercontent.com/110297/136462570-852fcc55-e363-4262-a8f3-6bb65702e75a.jpg)
 
-La IoT también plantea retos como el almacenamiento, análisis y
-visualización de la gran cantidad de información que genera.
-Se calcula que para el 2025 los dispositivos IoT generen
-[79.4 zettabytes](https://www.statista.com/statistics/1017863/worldwide-iot-connected-devices-data-size/)
-(1 zettabyte equivale a 1 trillón de gigabytes).
-Como desarrolladoras debemos estar al tanto de estos retos y contribuir para
-su solución desde nuestra experiencia, conocimiento y ganas de aprender.
+A IoT também apresenta desafios como o armazenamento, análise e visualização da
+grande quantidade de informações que ela gera. Estima-se que até 2025, os
+dispositivos IoT gerem [79,4 zettabytes](https://www.statista.com/statistics/1017863/worldwide-iot-connected-devices-data-size/) (1 zettabyte equivale a 1 trilhão
+de gigabytes). Como desenvolvedoras, devemos estar cientes desses desafios e
+contribuir para sua resolução com nossa experiência, conhecimento e vontade de
+aprender.
 
-## 2. Resumen del proyecto
+## 2. Resumo do projeto
 
-En este proyecto construirás la API REST de un
-[Fleet Management Software](https://en.wikipedia.org/wiki/Fleet_management)
-para consultar las ubicaciones de los vehículos de una empresa
-de taxis en Beijing, China.
+Neste projeto, você construirá a API REST de um
+[Software de Gestão de Frotas](https://en.wikipedia.org/wiki/Fleet_management)
+para consultar as localizações dos veículos de uma empresa de táxis em Pequim,
+China.
 
-Te entregaremos un poco más de 17 millones de ubicaciones de casi 10 mil
-taxis. Esperamos que como desarrolladora explores nuevas alternativas y
-técnicas para almacenar y consultar esta gran cantidad de
-información y puedas garantizar la mejor experiencia de usuaria en tu
-API REST.
+Forneceremos milhões de localizações de milheres de táxis. Esperamos
+que, como desenvolvedora, você explore novas alternativas e técnicas para
+armazenar e consultar essa grande quantidade de informações e possa garantir
+a melhor experiência do usuário em sua API REST.
 
-## 3. Objetivos de aprendizaje
+### Java & OOP
 
-Reflita e depois enumere os objetivos que quer alcançar e aplique no seu projeto. Pense nisso para decidir sua estratégia de trabalho.
+- [ ] **Tipos de dados primitivos**
+- [ ] **Tipos de dados: primitivos vs não primitivos**
+- [ ] **Strings (cadeias de caracteres)**
+- [ ] **Arrays (matrizes)**
+- [ ] **Modificadores de acesso: `private`**
+- [ ] **Modificadores de acesso: `protected`**
+- [ ] **Modificadores de acesso: `public`**
 
-### Node.js
+- #### Programação Orientada a Objetos (OOP)
 
-- [ ] **Instalar e usar módulos com npm**
+  - [ ] **Classes**
+  - [ ] **Objetos**
+  - [ ] **Métodos**
+  - [ ] **Atributos**
+  - [ ] **Construtores**
+  - [ ] **Encapsulamento**
+  - [ ] **Abstração**
+  - [ ] **Composição**
+  - [ ] **Interfaces**
+  - [ ] **Herança: `super`**
+  - [ ] **Herança: `extends`**
+  - [ ] **Herança: `overrride`**
+  - [ ] **Linguagem Unificada de Modelagem (UML): Diagramas de classes**
 
-  <details><summary>Links</summary><p>
+- [ ] **Variáveis**
+- [ ] **Condicionais**
+- [ ] **Uso de loops/ciclos**
 
-  * [Sitio oficial de npm (em inglês)](https://www.npmjs.com/)
+- #### Coleções
+
+  - [ ] **Listas: ArrayList**
+  - [ ] **Mapas: HashMap**
+  - [ ] **Conjuntos: HashSet**
+
+- #### Testes
+
+  - [ ] **JUnit**
+  - [ ] **Mockito**
+
+### Spring Framework
+
+<details><summary>Links</summary><p>
+
+- [Referência](https://docs.spring.io/spring-framework/reference/)
 </p></details>
 
-- [ ] **Configuração do package.json**
+- [ ] **Spring `initializr`**
 
-  <details><summary>Links</summary><p>
+- #### Conceitos Principais
 
-  * [package.json - Documentação oficial (em inglês)](https://docs.npmjs.com/files/package.json)
+<details><summary>Links</summary><p>
+
+- [Tecnologias Principais](https://docs.spring.io/spring-framework/reference/core.html)
 </p></details>
 
-- [ ] **Configuração do npm-scripts**
+* [ ] **Beans**
+* [ ] **Inversão de Controle (IoC)**
+* [ ] **Anotações**
 
-  <details><summary>Links</summary><p>
+- #### Spring Boot
 
-  * [scripts - Documentação oficial (em inglês)](https://docs.npmjs.com/misc/scripts)
+<details><summary>Links</summary><p>
+
+- [Referência](https://docs.spring.io/spring-boot/docs/current/reference/html/)
 </p></details>
 
-- [ ] **process (env, argv, stdin-stdout-stderr, exit-code)**
+* [ ] **Servlets**
+* [ ] **Controllers**
+* [ ] **Services**
 
-  <details><summary>Links</summary><p>
+- #### Spring Data JPA
 
-  * [Process - Documentação oficial (em inglês)](https://nodejs.org/api/process.html)
+<details><summary>Links</summary><p>
+
+- [Referência](https://docs.spring.io/spring-data/jpa/docs/current/reference/html/)
 </p></details>
 
-- [ ] **File system (fs, path)**
+* [ ] **Entidade**
+* [ ] **Repositório**
 
-  <details><summary>Links</summary><p>
+- #### Spring Web
 
-  * [File system - Documentação oficial (em inglês)](https://nodejs.org/api/fs.html)
-  * [Path - Documentação oficial (em inglês)](https://nodejs.org/api/path.html)
+<details><summary>Links</summary><p>
+
+- [Criando um Serviço Web RESTful](https://spring.io/guides/gs/rest-service/)
 </p></details>
 
-### Bases de dados
+* [ ] **REST Controller**
+* [ ] **RequestMapping**
+* [ ] **RequestParam**
 
-- [ ] **Modelagem de dados**
+- #### Testes
 
-- [ ] **Conexão**
+  - [ ] **Teste Spring**
+  - [ ] **Hamcrest**
 
-- [ ] **Índices e limitações**
+### Hibernate ORM
 
-### SQL
+<details><summary>Links</summary><p>
 
-- [ ] **Criação e modificação de tabelas**
-
-  <details><summary>Links</summary><p>
-
-  * [SQL CREATE TABLE Statement - w3schools (em inglês)](https://www.w3schools.com/sql/sql_create_table.asp)
-  * [CREATE TABLE Statement - PostgreSQL Docs (em inglês)](https://www.postgresql.org/docs/9.1/sql-createtable.html)
-  * [ALTER TABLE Statement - PostgreSQL Docs (em inglês)](https://www.postgresql.org/docs/9.1/sql-altertable.html)
+- [O que é um ORM?](https://hibernate.org/orm/what-is-an-orm/)
+- [Primeiros Passos](https://docs.jboss.org/hibernate/orm/6.3/quickstart/html_single/)
+- [Guia do Usuário](https://docs.jboss.org/hibernate/orm/6.3/userguide/html_single/Hibernate_User_Guide.html)
 </p></details>
 
-- [ ] **Operações CRUD (Create-Read-Update-Delete)**
+- [ ] **Configuração e Entidades**
 
-  <details><summary>Links</summary><p>
+- #### Mapeamento de Entidades
 
-  * [INSERT](https://www.postgresql.org/docs/9.5/sql-insert.html)
-  * [SELECT](https://www.postgresql.org/docs/9.5/sql-select.html)
-  * [UPDATE](https://www.postgresql.org/docs/9.1/sql-update.html)
-  * [DELETE](https://www.postgresql.org/docs/8.1/sql-delete.html)
+<details><summary>Links</summary><p>
+
+- [Mapeamento de Entidades](https://docs.jboss.org/hibernate/orm/6.3/userguide/html_single/Hibernate_User_Guide.html#EntityMapping)
 </p></details>
 
-- [ ] **Exclusão de tabelas ou bancos de dados inteiros com DROP**
+* [ ] **Entidades**
+* [ ] **Tabelas**
+* [ ] **Colunas**
+* [ ] **Chave Primária**
+* [ ] **Chave Estrangeira (Relacionamentos)**
+* [ ] **Campos Básicos**
+* [ ] **Campos Temporais**
 
-  <details><summary>Links</summary><p>
+- [ ] **JPQL (Java Persistence Query Language)**
 
-  * [DROP TABLE](https://www.postgresql.org/docs/8.2/sql-droptable.html)
-  * [DROP DATABASE](https://www.postgresql.org/docs/8.2/sql-dropdatabase.html)
+### Banco de Dados & SQL
+
+<details><summary>Links</summary><p>
+
+- [O que é um SGBD?](https://docs.oracle.com/en/database/oracle/oracle-database/19/cncpt/database-architecture.html#GUID-CEBABHDF)
+- [Introdução ao SQL](https://docs.oracle.com/en/database/oracle/oracle-database/19/sqlrf/Introduction-to-SQL.html)
 </p></details>
 
-### PostgreSQL
-
-- [ ] **Cliente de terminal psql**
-
-  <details><summary>Links</summary><p>
-
-  * [psql - Docs (em inglês)](https://www.postgresql.org/docs/14/app-psql.html)
-</p></details>
-
-- [ ] **Tipos de dados**
-
-  <details><summary>Links</summary><p>
-
-  * [Chapter 8. Data Types - Docs (em inglês)](https://www.postgresql.org/docs/14/datatype.html)
-</p></details>
-
-- [ ] **Backup e restauração (backup/restore)**
-
-  <details><summary>Links</summary><p>
-
-  * [Chapter 26. Backup and Restore - Docs (em inglês)](https://www.postgresql.org/docs/14/backup.html)
-</p></details>
-
+- [ ] **Sistemas de Gerenciamento de Banco de Dados (SGBD)**
+- [ ] **DDL (Data Definition Language): `CREATE`, `ALTER`, `DROP`**
+- [ ] **DML (Data Manipulation Language): `SELECT`, `INSERT`, `UPDATE`, `DELETE`**
+- [ ] **Consultas SQL: `JOIN`**
 - [ ] **Índices**
+- [ ] **Transações**
+- [ ] **Programação com SQL**
 
-  <details><summary>Links</summary><p>
+### APIs & REST
 
-  * [Chapter 11. Indexes - Docs (em inglês)](https://www.postgresql.org/docs/14/indexes.html)
+<details><summary>Links</summary><p>
+
+- [O que é REST](https://restfulapi.net/)
+- [Introdução ao REST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Overview)
+- [Documentação JSONPlaceholder](https://jsonplaceholder.typicode.com/)
 </p></details>
 
-### React
+- [ ] **RESTful API**
+- [ ] **Recursos e Rotas (Endpoints)**
+- [ ] **Métodos HTTP: `GET`, `POST`, `PUT`, `DELETE`**
+- [ ] **Status HTTP: `200`, `201`, `204`, `400`, `401`, `403`, `404`, `500`**
+- [ ] **JSON (JavaScript Object Notation)**
 
-- [ ] **JSX**
+### Deploy
 
-  <details><summary>Links</summary><p>
+<details><summary>Links</summary><p>
 
-  * [Introduzindo JSX - Documentação oficial](https://pt-br.react.dev/learn/writing-markup-with-jsx)
+- [Preparando-se para a Produção](https://docs.spring.io/spring-boot/docs/current/reference/html/deployment.html)
+- [Implantação da Aplicação Spring Boot no Heroku](https://www.heroku.com/deployment)
 </p></details>
 
-- [ ] **Componentes e propriedades (props)**
+- [ ] **Variáveis de Ambiente**
 
-  <details><summary>Links</summary><p>
+### Fundamentos
 
-  * [Componentes e propriedades - Documentação oficial](https://pt-br.react.dev/learn/passing-props-to-a-component)
+<details><summary>Links</summary><p>
+
+- [Projeto Frotas](#2-resumo-do-projeto)
 </p></details>
 
-- [ ] **Manipulação de eventos**
+- [ ] **Documentação**
 
-  <details><summary>Links</summary><p>
+### Versionamento
 
-  * [Manipulando eventos - Documentação oficial](https://pt-br.react.dev/learn/responding-to-events)
+<details><summary>Links</summary><p>
+
+- [Versionamento Semântico 2.0.0](https://semver.org/lang/pt-BR/)
+- [Controle de Versão com Git](https://www.atlassian.com/br/git)
 </p></details>
 
-- [ ] **Listas e keys**
-
-  <details><summary>Links</summary><p>
-
-  * [Listas e chaves - Documentação oficial](https://pt-br.react.dev/learn/rendering-lists)
-</p></details>
-
-- [ ] **Renderização condicional**
-
-  <details><summary>Links</summary><p>
-
-  * [Renderização condicional - Documentação oficial](https://pt-br.react.dev/learn/conditional-rendering)
-</p></details>
-
-- [ ] **Elevação de estado**
-
-  <details><summary>Links</summary><p>
-
-  * [Elevação de estado - Documentação oficial](https://pt-br.react.dev/learn/sharing-state-between-components)
-</p></details>
-
-- [ ] **Hooks**
-
-  <details><summary>Links</summary><p>
-
-  * [Introduzindo Hooks - Documentação oficial](https://pt-br.react.dev/reference/react)
-</p></details>
-
-- [ ] **CSS modules**
-
-  <details><summary>Links</summary><p>
-
-  * [Adding a CSS Modules Stylesheet - Documentação de Create React App (em inglês)](https://vitejs.dev/guide/features.html#css-modules)
-</p></details>
-
-- [ ] **React Router**
-
-  <details><summary>Links</summary><p>
-
-  * [Quick Start - Documentação oficial (em inglês)](https://reactrouter.com/en/main/start/tutorial)
-</p></details>
-
-### Vue
-
-- [ ] **Instância de Vue.js**
-
-  <details><summary>Links</summary><p>
-
-  * [A Instância Vue - Documentação oficial](https://br.vuejs.org/v2/guide/instance.html)
-</p></details>
-
-- [ ] **Dados e métodos**
-
-  <details><summary>Links</summary><p>
-
-  * [Dados e métodos - Documentação oficial](https://br.vuejs.org/v2/guide/instance.html#Dados-e-Metodos)
-</p></details>
-
-- [ ] **Uso e criação de componentes**
-
-  <details><summary>Links</summary><p>
-
-  * [Conceitos Básicos de Componentes - Documentação oficial](https://br.vuejs.org/v2/guide/components.html)
-</p></details>
-
-- [ ] **Props**
-
-  <details><summary>Links</summary><p>
-
-  * [Passando dados aos componentes filhos com Props - Documentação oficial](https://br.vuejs.org/v2/guide/components.html#Passando-Dados-aos-Filhos-com-Props)
-</p></details>
-
-- [ ] **Diretivas (v-bind | v-model)**
-
-  <details><summary>Links</summary><p>
-
-  * [v-bind - Documentação oficial](https://br.vuejs.org/v2/api/#v-bind)
-  * [Binding/Interligações em Formulários - Documentação oficial](https://br.vuejs.org/v2/guide/forms.html)
-</p></details>
-
-- [ ] **Iteração (v-for)**
-
-  <details><summary>Links</summary><p>
-
-  * [Array em elementos com v-for - Documentação oficial](https://br.vuejs.org/v2/guide/list.html#Array-em-Elementos-com-v-for)
-</p></details>
-
-- [ ] **Eventos (v-on)**
-
-  <details><summary>Links</summary><p>
-
-  * [Manipulação de eventos - Documentação oficial](https://br.vuejs.org/v2/guide/events.html)
-</p></details>
-
-- [ ] **Dados Computados e Observadores**
-
-  <details><summary>Links</summary><p>
-
-  * [Dados Computados e Observadores](https://br.vuejs.org/v2/guide/computed.html)
-</p></details>
-
-- [ ] **Routing**
-
-  <details><summary>Links</summary><p>
-
-  * [Getting Started - Documentação oficial de Vue Router](https://router.vuejs.org/guide/#html)
-</p></details>
-
-- [ ] **Classes e Estilos**
-
-  <details><summary>Links</summary><p>
-
-  * [Interligações de Classe e Estilo - Documentação oficial](https://br.vuejs.org/v2/guide/class-and-style.html)
-</p></details>
-
-### Angular
-
-- [ ] **Components & templates**
-
-  <details><summary>Links</summary><p>
-
-  * [Angular Components Overview - Documentação oficial (em inglês)](https://angular.io/guide/component-overview)
-  * [Introduction to components and templates - Documentação oficial (em inglês)](https://angular.io/guide/architecture-components#introduction-to-components)
-</p></details>
-
-- [ ] **Diretivas estruturais (ngIf / ngFor)**
-
-  <details><summary>Links</summary><p>
-
-  * [Writing structural directives - Documentação oficial (em inglês)](https://angular.io/guide/structural-directives)
-</p></details>
-
-- [ ] **@Input | @Output**
-
-  <details><summary>Links</summary><p>
-
-  * [Component interaction - Documentação oficial (em inglês)](https://angular.io/guide/component-interaction#component-interaction)
-</p></details>
-
-- [ ] **Criação e uso de serviços**
-
-  <details><summary>Links</summary><p>
-
-  * [Providing services - Documentação oficial (em inglês)](https://angular.io/guide/architecture-services#providing-services)
-</p></details>
-
-- [ ] **Gerenciamento de rotas**
-
-  <details><summary>Links</summary><p>
-
-  * [In-app navigation: routing to views - Documentação oficial (em inglês)](https://angular.io/guide/router)
-</p></details>
-
-- [ ] **Criação e uso de Observables**
-
-  <details><summary>Links</summary><p>
-
-  * [Observables in Angular - Documentação oficial (em inglês)](https://angular.io/guide/observables-in-angular)
-</p></details>
-
-- [ ] **Uso de HttpClient**
-
-  <details><summary>Links</summary><p>
-
-  * [Communicating with backend services using HTTP - Documentação oficial (em inglês)](https://angular.io/guide/http)
-</p></details>
-
-- [ ] **Estilos de componentes (ngStyle / ngClass)**
-
-  <details><summary>Links</summary><p>
-
-  * [Template syntax - Documentação oficial (em inglês)](https://angular.io/guide/template-syntax#built-in-directives)
-</p></details>
-
-## 4. Criterios de aceptación del proyecto
-
- La empresa que nos ha contratado ha instalado dispositivos GPS en sus taxis.
- Estos dispositivos utilizan señales satelitales para determinar
- con precisión las coordenadas geográficas del taxi.
- Hasta el momento la información de ubicación se ha almacenado en archivos
- de texto, sin embargo, no es óptimo consultar la información con esta opción.
-
-Nuestra clienta requiere:
-
-1. Cargar la información de los archivos de texto a una
-base de datos Postgresql.
-2. Desarrollar una API REST que permita consultar, mediante
-peticiones HTTP, la información almancenada en la base de datos.
-
-### Definición del producto
-
-El [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
-nos presenta este _backlog_ que es el resultado de su trabajo con el clientx
-hasta hoy.
+- [ ] **Git**
+- [ ] **GitHub**
+
+## 4. Criterios de aceitação do projeto
+
+ A empresa que nos contratou, instalou dispositivos GPS em seus taxis.
+ Estes dispositivos utilizam sinais de satelitales para determinar
+ com precisão as coordenadas geográficas do taxi.
+ Até o momento a informação de localização estão armazenadas em arquivos 
+ de texto, no entando, não é o ideal consultar informações desta forma.
+
+Nosso cliente precisa:
+
+1. Carregar a informação dos arquivos de textp em uma 
+base de dados Postgresql.
+2. Desenvolver uma API REST que permita consultar, mediante
+requisições HTTP, a informação armazenada na base de dados.
+
+### Definição do produto
+
+O [_Product Owner_](https://www.youtube.com/watch?v=r2hU7MVIzxs&t=202s)
+nos apresenta este _backlog_ que é o resultado do seu trabalho com
+as pessoas que representam os nossos clientes.
+
+***
+#### [Historia de usuario 1] Carregar a informação na base de dados
+
+Eu como _desenvolvedora_ quero carregar a informação, armazenada
+até agora em arquivos de texto, em uma base de datos Postgresql,
+para facilitar sua consulta e análise.
+
+##### Critérios de aceitação
+
+* Desenvolver um script SQL que
+carregue as informações dos arquivos de texto na base
+de dados. 
+
+##### Definição de pronto
+
+* Os scripts SQL precisam criar as tabelas no banco de dados. 
+* Os scripts devem carregar os dados disponibilizados pela
+empresa de taxis.
+
+#### [Historia de usuario 2] Endpoint última localização
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+consultar a última localização reportada por cada taxi.
+
+##### Critérios de aceitação
+
+* O _endpoint_ responde para cada taxi a siguiente informação:
+ID, placa, latitude, longitude e data e hora.
+* O _endpoint_ faz paginação dos resultados para garantir que as
+respostas sejam mais fáceis de manejar.
+* O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
+
+##### Definição de pronto
+
+* Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+* O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+* O código _endpoint_ deve estar disponível em um repositorio do Github.
+* O código _endpoint_ deve contar com testes unitarios e e2e.
 
 ***
 
-#### [Historia de usuario 1] Cargar información a base de datos
+#### [Historia de usuario 3] Endpoint histórico de localizações
 
-Yo como _desarrolladora_ requiero cargar la información, almacenada
-hasta ahora en archivos de texto, en una base de datos Postgresql
-para facilitar su consulta y análisis.
+Eu como cliente da API REST preciso de um _endpoint_ para
+consultar todas as localizações de un taxi dado um ID de um taxi e uma data.
 
-##### Criterios de aceptación
+##### Critérios de aceitação
 
-* Desarrollar una Interfaz de Línea de Comando (CLI) que
-cargue la información de los archivos de texto a la base
-de datos:
+* O _endpoint_ responde para o ID do taxi consultado a seguinte
+informação: latitude, longitude e data e hora.
+* O _endpoint_ faz paginação dos resultados para garantir que as
+respostas sejam mais fáceis de manejar.
+* O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
 
-    En el caso de Java
+##### Definição de pronto
+
+* Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+* O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+* O código _endpoint_ deve estar disponível em um repositorio do Github.
+* O código _endpoint_ deve contar com testes unitarios e e2e.
+
+***
+
+#### [Historia de usuario 4] Endpoint lista de taxis
+
+Eu como cliente da API REST preciso de um _endpoint_ para
+listar todos os taxis.
+
+##### Critérios de aceitação
+
+* O _endpoint_ responde para cada taxi: ID e placa.
+* O _endpoint_ faz paginação dos resultados para garantir que as
+respostas sejam mais fáceis de manejar.
+* O _endpoint_ responde as solicitações em pouco tempo para
+não afetar a experiência da usuária. _Nota: devido
+à grande quantidade de informação, se espera com **segurança** tempos de
+resposta mais lentos se uma estratégia de otimização de banco de dados
+não for implementada._
+
+##### Definição de pronto
+
+* Deve existir uma documentação para o _endpoint_ desenvolvido
+especificando
+[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+* O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+* O código _endpoint_ deve estar disponível em um repositorio do Github.
+* O código _endpoint_ deve contar com testes unitarios e e2e.
+
+#### [Historia de usuario 5] Carregar a informação na base de dados usando uma CLI
+
+Eu como _desenvolvedora_ quero carregar a informação, armazenada
+até agora em arquivos de texto, em uma base de datos Postgresql, usando uma CLI,
+para facilitar sua consulta e análise.
+
+##### Critérios de aceitação
+
+* Desenvolver uma interface de Linha de Comando (CLI) que
+carregue a informação dos arquivos de texto na base
+de dados:
+
+    No caso de Java
 
     ```bash
     java UploadGPSData.java <path-to-files> 
@@ -404,7 +397,7 @@ de datos:
     --username=<username>
     ````
 
-    En el caso de NodeJs
+    No caso de NodeJs
 
     ```bash
     node upload-gps-data.js <path-to-files> 
@@ -415,170 +408,70 @@ de datos:
     --username=<username>
     ````
 
-    Donde los parámetros requeridos son:
+    Onde os parâmetros esperados são:
 
-    `<path-to-files>`: especifica el directorio de los archivos a cargar.
+    `<path-to-files>`: especifica o diretorio dos arquivos a carregar.
 
-    `--type=taxis|trajectories`: indica el [tipo de archivos](#data)
-    a cargarse taxis o trajectories.
+    `--type=taxis|trajectories`: indica o [tipo de arquivo](#data)
+    a carregar taxis ou trajetorias.
 
-    `--dbname=dbname`: especifica el nombre de la base de datos
-    a la que conectarse.
+    `--dbname=dbname`: especifica o nome da base de dados para se conectar.
 
-    `--host=hostname`: especifica el nombre del host de la máquina
-    en la que se está ejecutando la base de datos.
+    `--host=hostname`: especifica o nome do host da máquina
+    em que se está executando a base de dados.
 
-    `--port=port`: especifica el puerto TCP en el que  la base de
-    datos está escuchando conexiones.
+    `--port=port`: especifica a porta TCP onde a base de
+    dados está escutando conexões.
 
-    `--username=username`: especifica el usuario para conectarse a
-    la base de datos.
+    `--username=username`: especifica o usuario para se conectar na
+    base de dados.
 
-    _Nota: el CLI debe solicitar la
-    contraseña de conexión a la base de datos.
-    Por segurisdad esta no puede ser un parámetro._
+    _Nota: a CLI deve solicitar a
+    senha de conexão com a base de dados.
+    Por segurança, esta não pode ser um parâmetro._
 
-##### Definición de terminado
+##### Definição de pronto
 
-* El código de la Interfaz de Línea de Comando (CLI) debe
-recibir _code review_ de al menos una compañera.
-* El código de la Interfaz de Línea de Comando (CLI) debe
-estar cargado en un repositorio de Github.
-* El código de la Interfaz de Línea de Comando (CLI) debe
-contar con test unitarios.
-
-***
-
-#### [Historia de usuario 2] Endpoint última ubicación
-
-Yo como clienta de la API REST requiero un _endpoint_ para
-consultar la última ubicación reportada por cada taxi.
-
-##### Criterios de aceptación
-
-* El _endpoint_ responde para cada taxi la siguiente información:
-ID, placa, latitud, longitud y fecha y hora.
-* El _endpoint_ paginamos los resultados para asegurar que las
-respuestas sean más fáciles de manejar.
-* El _endpoint_ resuelve la solicitud en tiempos de respuesta
-óptimos que no afectan la experiencia de la usuaria. _Nota: debido
-a la gran cantidad de información, se espera con **seguridad** tiempos
-de respuesta lentos
-si no se plantea una estrategia de optimización la base de datos._
-
-##### Definición de terminado
-
-* Se cuenta con una documentación para el _endpoint_ desarrollado
-especificando
-[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
-url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
-y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
-* El código del _endpoint_ debe recibir _code review_ de al
-menos una compañera.
-* El código _endpoint_ debe estar cargado en un repositorio de Github.
-* El código _endpoint_ debe contar con test unitarios y e2e.
+* O código da Interface de Linha de Comando (CLI) deve
+receber _code review_ de pelo menos uma colega.
+* O código da Interface de Linha de Comando (CLI) deve
+estar disponível em um repositorio de Github.
+* O código da Interface de Linha de Comando (CLI) deve
+contar com testes unitários.
 
 ***
-
-#### [Historia de usuario 3] Endpoint historial de ubicaciones
-
-Yo como clienta de la API REST requiero un _endpoint_ para
-consultar todas las ubicaciones de un taxi dado el ID del taxi y una fecha.
-
-##### Criterios de aceptación
-
-* El _endpoint_ responde para el ID del taxi consultado la siguiente
-información: latitud, longitud y fecha y hora.
-* El _endpoint_ paginamos los resultados para asegurar que las
-respuestas sean más fáciles de manejar.
-* El _endpoint_ resuelve la solicitud en tiempos de respuesta
-óptimos que no afectan la experiencia de la usuaria. _Nota: debido
-a la gran cantidad de información, se espera con **seguridad** tiempos
-de respuesta lentos
-si no se plantea una estrategia de optimización la base de datos._
-
-##### Definición de terminado
-
-* Se cuenta con una documentación para el _endpoint_ desarrollado
-especificando
-[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
-url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
-y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
-* El código del _endpoint_ debe recibir _code review_ de al
-menos una compañera.
-* El código _endpoint_ debe estar cargado en un repositorio de Github.
-* El código _endpoint_ debe contar con test unitarios y e2e.
-
-***
-
-#### [Historia de usuario 4] Endpoint listado de taxis
-
-Yo como clienta de la API REST requiero un _endpoint_ para
-listar todos los taxis.
-
-##### Criterios de aceptación
-
-* El _endpoint_ responde para cada taxi: ID y placa.
-* El _endpoint_ paginamos los resultados para asegurar que las
-respuestas sean más fáciles de manejar.
-* El _endpoint_ resuelve la solicitud en tiempos de respuesta
-óptimos que no afectan la experiencia de la usuaria. _Nota: debido
-a la gran cantidad de información, se espera con **seguridad** tiempos
-de respuesta lentos
-si no se plantea una estrategia de optimización la base de datos._
-
-##### Definición de terminado
-
-* Se cuenta con una documentación para el _endpoint_ desarrollado
-especificando
-[método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
-url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
-y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
-* El código del _endpoint_ debe recibir _code review_ de al
-menos una compañera.
-* El código _endpoint_ debe estar cargado en un repositorio de Github.
-* El código _endpoint_ debe contar con test unitarios y e2e.
 
 ## 5. Stack de tecnologías
 
-Puedes implementar este proyecto en JavaScript o Java.
+Você pode implementar este projeto em JavaScript ou Java.
 
-Si eliges JavaScript, el siguiente es el stack de tecnologías recomendado:
+Se optar por JavaScript, recomendamos a seguinte stack de tecnologia:
 
 * [Express](https://expressjs.com/en/starter/hello-world.html):
-como librería para implementar un servidor HTTP.
-* [Prisma](https://www.prisma.io/): cómo
+como biblioteca para implementar un servidor HTTP.
+* [Prisma](https://www.prisma.io/): como
 [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
-para facilitar consultas a la base de datos.
-* [Jest](jestjs.io/): como framework de pruebas unitarias.
+para facilitar consultas ao banco de dados.
+* [Jest](jestjs.io/): como framework de testes unitários.
 * [Superagent](https://www.npmjs.com/package/superagent): como
-framework de pruebas e2e.
-* [Postgresql](https://www.postgresql.org/): como base de datos.
+framework de testes e2e.
+* [Postgresql](https://www.postgresql.org/): como base de dados.
 
-Si eliges Java, el siguiente es el stack de tecnologías recomendado:
+Se optar por Java, recomendamos a seguinte stack de tecnologia:
 
 * [Spring Boot](https://spring.io/projects/spring-boot/): para
-crear aplicaciones Java
+criar aplicações Java
 * [Spring Boot Test](https://docs.spring.io/spring-boot/docs/current/reference/html/features.html#features.testing.spring-boot-applications):
-para pruebas de integración.
-* [JUnit](https://junit.org/junit5/): para pruebas unitarias.
+para testes de integração.
+* [JUnit](https://junit.org/junit5/): para testes unitários.
 * [Hibernate](https://docs.spring.io/spring-framework/reference/data-access/orm/hibernate.html):
-cómo [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
-para facilitar consultas a la base de datos.
-* [Postgresql](https://www.postgresql.org/): como base de datos.
+como [ORM](https://en.wikipedia.org/wiki/Object%E2%80%93relational_mapping)
+para facilitar consultas ao banco de dados.
+* [Postgresql](https://www.postgresql.org/): como base de dados.
 
 ## 6. Boilerplate
 
-El _boilerplate_ contiene una estructura de archivos como punto de partida:
+O _boilerplate_ contém uma estrutura de arquivos como ponto de partida:
 
 ```text
 .
@@ -591,168 +484,169 @@ El _boilerplate_ contiene una estructura de archivos como punto de partida:
 
 ### `data`
 
-En esta carpeta debes almacenar tanto la data cruda como los scripts que
-desarrolles para cargar la información de taxis y ubicaciones a la base de datos
-de tu aplicación.
+Nesta pasta você deve armazenar tanto os dados crus como os scripts que
+foram criados para carregar a informação de taxis e localizações para a base de dados
+da sua aplicação.
 
-Acá puedes descargar los archivos con la data _cruda_:
+Aqui pode baixar os arquivos com os dados _crus_:
 
 * [fleet-management-software-data-part-1.zip](https://storage.googleapis.com/bootcamp-assets/projects/05-fleet-management/fleet-management-software-data-part-1.zip)
 * [fleet-management-software-data-part-2.zip](https://storage.googleapis.com/bootcamp-assets/projects/05-fleet-management/fleet-management-software-data-part-2.zip)
 
-Los archivos `fleet-management-software-data-part-1.zip`
-y `fleet-management-software-data-part-2.zip`
-contienen la información de taxis y ubicaciones.
-Al descomprimirlos se crearán dos carpetas: `taxis` y `trajectories`.
+Os arquivos `fleet-management-software-data-part-1.zip`
+e `fleet-management-software-data-part-2.zip`
+contém a informação de taxis e localizações.
+Ao descompactar serão criadas duas pastas: `taxis` e `trajectories`.
 
-En la carpeta `taxis` encontrarás el archivo `taxis.txt`. En cada línea
-del archivo, encontrarás el identificador (ID) y placa de un taxi. La
-información esta separada entre sí por comas.
+Em `taxis` você encontrará o arquivo `taxis.txt`. En cada linha
+do arquivo, encontrará o identificador (ID) e a placa de um taxi. As
+informações estão separada entre sí por vírgulas.
 
 ![Archivo taxis.txt](./docs/first-10-lines-taxis-txt.png "Archivo taxis.txt")
 
-En la carpeta `trajectories` encontrarás 10.357 archivos con extensión
-txt. Cada archivo contiene las ubicaciones de un taxi. El nombre del archivo
-corresponde al identificador del taxi. Por ejemplo, el archivo `9557.txt`
-contiene las ubicaciones del taxi con identificador 9557. En cada línea de
-estos archivos, encontrarás el identificador del taxi (ID), la fecha y hora,
-latitud y longitud de la ubicación. En una línea, la información está
-separada entre sí por comas.
+Na pasta `trajectories` encontrará 10.357 arquivos com extensão
+txt. Cada archivo contém as localizações de um taxi. O nome do arquivo
+corresponde ao identificador do taxi. Por exemplo, o arquivo `9557.txt`
+contém as localizações do taxi com identificador 9557. En cada linha destes
+arquivos, encontrará o identificador do taxi (ID), a data e hora,
+latitude e longitude de uma localicação. Em cada linha, as informações estão
+separada entre sí por virgulas.
 
 ![Archivo 9557.txt](./docs/first-10-lines-9557-txt.png "Archivo 9557.txt")
 
-La información de taxis y ubicaciones ha sido extraída del proyecto
+A informação de taxis e localizações foi extraída do projeto
 [T-Drive: Driving Directions based on Taxi Traces](https://shorturl.at/enBJW)
 de Microsoft.
 
 ### `server`
 
-En esta carpeta debes almacenar todos los archivos correspondientes al
+Nesta pasta você deve armazenar todos os arquivos correspondentes a
 API REST.
 
-## 7. Pistas, tips y lecturas complementarias
+## 7. Guias, dicas e leituras complementares
 
-### Modelamiento de datos
+### Modelagem de dados
 
-La base de datos recomendada para tu aplicación es PostgreSQL. Te
+A base de dados recomendada para sua aplicação é o PostgreSQL. Te
 recomendamos usar [vercel Postgresql](https://vercel.com/docs/storage/vercel-postgres)
-para que no tengas que instalar PostgreSQL en tu computadora.
+para que não tenha que instalar PostgreSQL em seu computador.
 
-Una vez tengas acceso a una instancia de PostgreSQL, deberás crear tablas en
-tu base de datos para almacenar la información entregada. Te recomendamos
-entonces crear dos tablas, una para almacenar la información de taxis y otra
-para almacenar la información de ubicaciones. Deberás definir las columnas
-de cada tabla de acuerdo a la información entregada.
+Uma vez que tenha acceso a uma instancia de PostgreSQL, deverá criar tabelas em
+sua base de dados para almazenar a informação entregue. Recomendamos
+então criar as tabelas, uma para armazenar a informação de taxis e outra
+para armazenar a informação de localizações. Deverá definir as colunas
+de cada tabela de acordo com a informação entregue.
 
-Puedes crear una tabla en PostgreSQL usando
+Pode criar uma tabela no PostgreSQL usando
 [SQL](https://www.postgresqltutorial.com/postgresql-create-table/)
-o
+ou
 [Prisma Client](https:/shorturl.at/stxIL)
-si estás usando Prisma.
+se estiver usando Prisma.
 
-### Persistencia de datos
+### Persistencia de dados
 
-Una vez hayas creado las tablas en tu base de datos, deberás almacenar en
-ellas toda la información entregada en archivos TXT. Para ello te
-recomendamos escribir un CLI en JavaScript o Java.
-Sin embargo, ten en cuenta que en este proyecto procesarás más de 10 mil
-archivos y tendras una base de datos con conexiones limitadas. Discute con
-una coach que estrategias puedes implementar para que ni computadora ni la
-base de datos mueran en el intento de cargar la información.
+Depois de criar as tabelas em seu banco de dados, você deve armazenar nelas,
+todas as informações que foram entregues em arquivos TXT. Para isso recomendamos
+escrever uma CLI em JavaScript ou Java.
+Porém, lembre-se que neste projeto você processará mais de 10 mil
+arquivos e você terá um banco de dados com conexões limitadas. Discutir com
+um coach quais estratégias você pode implementar para que nem o computador nem o
+banco de dados morra tentando carregar as informações.
+
 
 ### Definir endpoints de API
 
-Deberás definir y documentar los endpoints de tu API.
-Debes usar [Swagger](https://swagger.io/) para esto.
+Deverá definir e documentar os endpoints de sua API.
+Deves usar [Swagger](https://swagger.io/) para isto.
 
-Para una API REST debes definir para cada endpoint entre otras cosas el
+Para uma API REST deve definir para cada endpoint entre outras coisas, qual o
 [método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
 url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
+[headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP Status Code](https://shorturl.at/bdegB)
 y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+[body](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
 
-Por ejemplo, en la siguiente figura se define un endpoint para consultar la
-información de los taxis en la aplicación. El método del endpoint es _GET_,
-la url es _/taxis_. Recibe un parámetro _query_, retorna la información con
-_código HTTP_ 200 en formato json gracias al _header_
-`Content-type` con valor `application/json`.
+Por exemplo, na imagem a seguir se define um endpoint para consultar a
+informação dos taxis na aplicação. O método do endpoint é o _GET_,
+a url é _/taxis_. Recebe um parâmetro _query_, retorna a informação com
+_código HTTP_ 200 em formato json graças ao _header_
+`Content-type` com valor `application/json`.
 
 ![Ejemplo Endpoint API Rest](./docs/example-endpoint-api-rest.png "Ejemplo Endpoint API Rest")
 
-### Mejorar tiempos de respuesta y experiencia de usuaria
+### Melhorar tempos de resposta e experiencia de usuaria
 
-Consultar las 780 ubicaciones del taxi con placa
-`ABGB-4538` para el día `2008-02-02` puede tardar alrededor de 10
-segundos. Para una usuaria de tu API REST este tiempo es toda una
-eternidad. ¿Qué estrategias puedes implementar para reducir los tiempos de
-respuesta y mejorar la experiencia de usuaria?
+Consultar as 780 localicações do taxi com placa
+`ABGB-4538` para o dia `2008-02-02` Pode demorar cerca de 10
+segundos. Para uma usuária da sua API REST, isso é uma
+eternidade. Que estratégias você pode implementar para reduzir os tempos de 
+resposta e melhorar a experiência do usuário?
 
-Algunas estrategias que podrías intentar son:
+Algunas estrategias que poderia tentar são:
 
-* Crear
+* Criar
 [índices](https://shorturl.at/owR09)
-sobre la tabla de ubicaciones.
-* Implementar un esquema de
+sobre a tabela de localizações.
+* Implementar um esquema de
 [particionamiento](https://www.postgresql.org/docs/9.1/ddl-partitioning.html)
-sobre la tabla de ubicaciones.
+sobre a tabela de localizações.
 * [Consultar y visualizar progresivamente](https://shorturl.at/ivyBS)
-la información en lotes.
+a informação em lotes.
 
-Discute con una coach cada una de estas estrategias y encuentra otras que
-puedas usar para mejorar el _performance_ de tu aplicación.
+Discuta com uma coach cada uma destas estrategias e encontre outras que
+pode usar para melhorar a _performance_ de sua aplicação.
 
 ## 8. Hacker edition
 
-Para la hacker edition de este proyecto te invitamos a agregar
-la funcionalidad la siguiente historia de usuaria:
+Para a hacker edition deste projecto te convidamos a adicionar
+a funcionalidade da seguinte historia de usuaria:
 
 ***
 
-### [Historia de usuario 4] Endpoint exportación a Excel
+### [Historia de usuario 4] Endpoint exportação Excel
 
-Yo como clienta de la API REST requiero un _endpoint_ para
-exportar en formato Excel todas las ubicaciones de un vehículo
-en una fecha específica.
+Eu como cliente da API REST preciso de um _endpoint_ para
+exportar em formato Excel todas as localizações de un veículo
+em uma dara específica.
 
-#### Criterios de aceptación
+#### Critérios de aceitação
 
-* El _endpoint_ proporcia un archivo en formato excel con
-la siguiente información: ID, placa, latitud, longitud y
-fecha y hora.
-* El _endpoint_ resuelve la solicitud en tiempos de respuesta
-óptimos que no afectan la experiencia de la usuaria. _Nota: debido
-a la gran cantidad de información, se espera con **seguridad** tiempos
-de respuesta lentos
-si no se plantea una estrategia de optimización la base de datos._
+* O _endpoint_ proporciona um arquivo em formato excel com
+a seguinte informação: ID, placa, latitude, longitude e
+data e hora.
+* O _endpoint_ resolve a solicitação em tempos de resposta
+ótimos que não afetam a experiencia da usuaria. _Nota: devido
+a grande quantidade de informação, se espera con **segurança** tempos
+de resposta lentos
+se não se implementar uma estrategia de otimização da base de dados._
 
-#### Definición de terminado
+#### Definição de pronto
 
-* Se cuenta con una documentación para el _endpoint_ desarrollado
+* Deve existir uma documentação para o _endpoint_ desenvolvido
 especificando
 [método HTTP](https://developer.mozilla.org/en-US/docs/Web/HTTP/Methods),
-url, parámetros,
-[encabezados](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
-[códigos HTTP de respuesta](https://shorturl.at/bdegB)
-y
-[cuerpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
-* El código del _endpoint_ debe recibir _code review_ de al
-menos una compañera.
-* El código _endpoint_ debe estar cargado en un repositorio de Github.
-* El código _endpoint_ debe contar con test unitarios y e2e.
+url, parâmetros,
+[Headers](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers),
+[HTTP response code](https://shorturl.at/bdegB)
+e
+[corpo](https://developer.mozilla.org/en-US/docs/Web/HTTP/Messages).
+* O código do _endpoint_ deve receber _code review_ de pelo
+menos uma colega.
+* O código _endpoint_ deve estar disponível em um repositorio do Github.
+* O código _endpoint_ deve contar com testes unitarios e e2e.
 
 ***
 
-Tal vez la primera alternativa que se te ocurra sea agregar un endpoint a tu
-API que reciba como parámetro el vehículo y la fecha y retorne un archivo de
-Excel para descargarlo desde el navegador web. Sin embargo, esta opción suele
-ser muy lenta. Por ejemplo la generación y descarga del archivo de Excel con
-las 33 mil ubicaciones del vehiculo `DHOA-9863` para el día `2008-02-27`
-puede tardar varios segundos, afectando la experiencia de las usuarias que
-usualmente son impacientes.
+Talvez a primeira alternativa que te ocorra seja adicionar um endpoint em sua
+API que recebe como parâmetro o veículo e a data e retorne un arquivo de
+Excel para baixá-lo do seu navegador web. No entanto, esta opção é geralmente
+ser muito lento. Por exemplo a geração e download do arquivo Excel com
+as 33 mil localizações do veículo `DHOA-9863` para o dia `2008-02-27`
+pode levar vários segundos, afetando a experiência dos usuários que
+Eles geralmente são impacientes.
 
-Los tiempos de respueta de esta funcionalidad puede mejorarse si el archivo de
-Excel no se descarga _en línea_ sino que se envía a un correo electrónico.
-Discute con una coach como podrías implementar esta alternativa y que otras
-estrategias existen.
+Os tempos de resposta desta funcionalidade podem ser melhorados se o arquivo
+Excel não for baixado _online_, mas enviado para um e-mail.
+Discuta com uma coach como você poderia implementar esta alternativa e quais outras
+estratégias existem.
