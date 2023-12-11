@@ -8,6 +8,5 @@ import java.util.Optional;
 
 @Repository
 public interface TaxiRepository extends PagingAndSortingRepository<TaxisModel, Integer> {
-
     Optional<TaxisModel> findById(Integer id);
 }

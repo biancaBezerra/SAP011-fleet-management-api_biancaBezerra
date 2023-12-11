@@ -14,6 +14,7 @@ public class TaxisModel implements Serializable {
 
     @Column(name = "plate")
     private String plate;
+
     public Integer getId() {
         return Id;
     }
