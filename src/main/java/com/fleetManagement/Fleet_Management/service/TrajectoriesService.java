@@ -9,4 +9,5 @@ import java.util.List;
 public interface TrajectoriesService {
     Page<TrajectoriesModel> findAll(Pageable pageable);
     Page<TrajectoriesModel> findByTaxiId(Integer id, Pageable pageable);
+    TrajectoriesModel getLastLocationByTaxiId(Integer id);
 }

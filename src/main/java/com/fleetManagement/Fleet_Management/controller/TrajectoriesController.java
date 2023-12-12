@@ -14,6 +14,8 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 
 @RestController
 @RequestMapping("api/v1/trajectories")
@@ -44,4 +46,11 @@ public class TrajectoriesController {
         Page<TrajectoriesModel> trajectories = trajectoriesService.findByTaxiId(id, pageable);
         return ResponseEntity.status(HttpStatus.OK).body(trajectories);
     }
+
+    @GetMapping("/last-location/{id}")
+    public ResponseEntity<TrajectoriesModel> getLastLocation(@PathVariable Integer id) {
+        TrajectoriesModel lastLocation = trajectoriesService.getLastLocationByTaxiId(id);
+        return ResponseEntity.status(HttpStatus.OK).body(lastLocation);
+    }
+
 }
