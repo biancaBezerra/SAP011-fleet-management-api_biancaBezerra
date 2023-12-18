@@ -7,10 +7,10 @@ import java.io.Serializable;
 
 @Entity
 @Table(name = "taxis")
-public class TaxisModel implements Serializable {
+public class TaxisModel implements Serializable { // serializable é tudo que transformamos em texto
     @Id
     @Column(name = "id")
-    private Integer Id;
+    private Integer Id; //encapsulamento, só pode ser acessada dentro da classe TaxisModel
 
     @Column(name = "plate")
     private String plate;

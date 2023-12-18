@@ -23,10 +23,7 @@ import java.util.Optional;
 @RequestMapping("api/v1/taxis")
 public class TaxiController {
     @Autowired
-    TaxiService taxiService; //dá acesso aos métodos JPA quando houver necessidade
-
-    //Listar todos os produtos que temos salvo na base método GET de leitura
-
+    TaxiService taxiService; //injeta automaticamente as instancias de taxiserve aqui no controller
 
     @GetMapping//acionamento URI /taxis
     public ResponseEntity<Page<TaxisModel>> findAll(Pageable pageable) { //no corpo ele vai ter uma Lista de taxis
@@ -41,7 +38,7 @@ public class TaxiController {
                     @Schema(implementation = TaxisModel.class))})})
 
     @GetMapping("/{id}") //acionamento URI /taxis com um unico recurso especifico ID
-    public ResponseEntity<Optional<TaxisModel>>findById(@PathVariable Integer id){ //vamos ter 2 tipos de retorno dependendo algumas situações
+    public ResponseEntity<Optional<TaxisModel>>findById(@PathVariable Integer id){
         return ResponseEntity.status(HttpStatus.OK).body(taxiService.findById(id));
     }
 }
