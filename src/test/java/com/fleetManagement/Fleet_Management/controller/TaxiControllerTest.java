@@ -52,8 +52,6 @@ public class TaxiControllerTest {
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(status().isOk())
                 .andExpect(content().json("{\"content\":[{'plate':'JHG-7856','id':5521}]}"));
-
-
     }
 
     @DisplayName("Retornar um taxi pelo id digitado")

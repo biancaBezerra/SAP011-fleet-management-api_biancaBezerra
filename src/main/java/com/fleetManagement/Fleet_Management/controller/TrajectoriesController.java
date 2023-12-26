@@ -1,5 +1,6 @@
 package com.fleetManagement.Fleet_Management.controller;
 
+import com.fleetManagement.Fleet_Management.model.TaxisModel;
 import com.fleetManagement.Fleet_Management.model.TrajectoriesModel;
 import com.fleetManagement.Fleet_Management.service.TrajectoriesService;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -45,6 +46,13 @@ public class TrajectoriesController {
         Page<TrajectoriesModel> trajectories = trajectoriesService.findByTaxiId(id, pageable);
         return ResponseEntity.status(HttpStatus.OK).body(trajectories);
     }
+
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
+            @ApiResponse(responseCode = "404", description = "Customer not found"),
+            @ApiResponse(responseCode = "200", description = "OK", content = {
+                    @Content(mediaType = "application/json", schema =
+                    @Schema(implementation = TrajectoriesModel.class))})})
 
     @GetMapping("/last-location/{id}")
     public ResponseEntity<TrajectoriesModel> getLastLocation(@PathVariable Integer id) {
