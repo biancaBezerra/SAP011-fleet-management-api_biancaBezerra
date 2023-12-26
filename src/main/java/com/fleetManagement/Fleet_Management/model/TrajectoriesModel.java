@@ -1,9 +1,11 @@
 package com.fleetManagement.Fleet_Management.model;
 
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import jakarta.persistence.*;
 
 import java.sql.Timestamp;
+import java.time.Instant;
 
 @Entity
 @Table(name = "trajectories")
@@ -15,8 +17,9 @@ public class TrajectoriesModel {
     @Column(name = "trajectories_id")
     private Integer trajectories_id;
 
+    @JsonFormat(pattern="yyyy-MM-dd HH:mm:ss", timezone="Brazil/East")
     @Column(name = "date")
-    private Timestamp date;
+    private Instant date;
 
     @Column(name = "latitude")
     private Double latitude;
@@ -36,11 +39,11 @@ public class TrajectoriesModel {
         this.trajectories_id = trajectories_id;
     }
 
-    public Timestamp getDate() {
+    public Instant getDate() {
         return date;
     }
 
-    public void setDate(Timestamp date) {
+    public void setDate(Instant date) {
         this.date = date;
     }
 

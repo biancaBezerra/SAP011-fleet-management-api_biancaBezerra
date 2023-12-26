@@ -17,7 +17,8 @@ import org.springframework.data.domain.Pageable;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
-import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 import java.util.ArrayList;
 import java.util.Optional;
@@ -48,8 +49,10 @@ public class TaxiControllerTest {
         Mockito.when(taxiRepository.findAll(ArgumentMatchers.any(Pageable.class))).thenReturn(page);
         // Realiza uma solicitação HTTP GET para o endpoint
         this.mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/taxis"))
-                .andDo(MockMvcResultHandlers.print());
-                //.andExpect();
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(status().isOk())
+                .andExpect(content().json("{\"content\":[{'plate':'JHG-7856','id':5521}]}"));
+
 
     }
 
@@ -64,6 +67,7 @@ public class TaxiControllerTest {
         // Configura o comportamento simulado do TaxiRepository quando o método findAll é chamado
         Mockito.when(taxiRepository.findById(taxiId)).thenReturn(Optional.of(taxisModel));
         this.mockMvc.perform(MockMvcRequestBuilders.get("/api/v1/taxis/{id}", taxiId))
-                .andDo(MockMvcResultHandlers.print());
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(content().json("{'plate':'JHG-7856','id':7249}"));
     }
 }
