@@ -22,12 +22,10 @@ import org.springframework.web.bind.annotation.*;
 public class TrajectoriesController {
     @Autowired
     TrajectoriesService trajectoriesService;
-
     @GetMapping
     public ResponseEntity<Page<TrajectoriesModel>> findAll(Pageable pageable){
         return ResponseEntity.status(HttpStatus.OK).body(trajectoriesService.findAll(pageable));
     }
-
 
     @ApiResponses(value = {
             @ApiResponse(responseCode = "400", description = "Invalid ID supplied"),
